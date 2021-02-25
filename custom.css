@@ -99,12 +99,7 @@ body.dark {
       
     
     }
-    .navbar-toggler-icon>.navbar-toggler:active {
-        display:inline;
-    }
-    .navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
-        display:none;
-    }
+
     .navbar-nav{
         text-align: right;
        
