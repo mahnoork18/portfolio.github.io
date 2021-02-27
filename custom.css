@@ -3,18 +3,17 @@
 *{
     padding: 0;
     margin: 0;
+    
     font-family: 'Poppins', sans-serif;
 }
 html{
 scroll-behavior: smooth;
 }
 body{
-  
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+overflow-x: hidden;
+
+ 
   height: 100vh;
-  overflow-x: hidden !important;/*to hide horizontal scroll*/
   transition: background 0.2s linear;
 }
 body.dark {
@@ -39,19 +38,21 @@ body.dark {
     font-size: 12px;
     font-weight: bold;
   }
-  .fa-moon {
-    color: #f1c40f;
+
+  .bi-moon{
+position: relative;
+margin-top: 40px;
   }
-  .fa-sun {
+  .bi-sun{
     color: #f39c12;
   }
   .ball {
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
     background-color: #fff;
     position: absolute;
-    top: 12%;
-    left: 2%;
+    top: 18%;
+    left: 10%;
     border-radius: 50px;
     transition: transform 0.2s linear;
   }
@@ -64,85 +65,65 @@ body.dark {
   }
   
   .label {
-    background-color: #111;
+    background-color:#7400b8;
     display: flex;
     border-radius: 50px;
-    height: 16px;
-    width: 40px;
-    margin-right: 30px;
-    margin-top: 30px;
+    height: 22px;
+    width: 50px;
+    right: 10%;
+margin: 0 auto;
     position: relative;
     padding: 5px;
     justify-content: space-between;
     transform: scale(1.5);
   }
   
-.navbar-toggler{
-    outline: none;
-    padding: 0 !important;
- 
-    background-color: inherit;
   
-   
-    }
-    .navbar-toggler:focus, .navbar-toggler:active {
+
+.navbar-toggler{
+outline: none !important;
+padding: 0 !important;
+}
+.navbar-toggler img{
+    width: 25px;
+}
+  .navbar-toggler:focus, .navbar-toggler:active {
         outline: none !important;
         box-shadow: none !important;
       }
-      
-    .navbar-toggler img{
-        width: 25px;
-        outline: none;
-        padding: 0 !important;
-        background-color: none;
-     
-      
-    
-    }
-
-    .navbar-nav{
-        text-align: right;
-       
-    }
-    .navbar-brand img{
-        width: 110px;
-    }
+.navbar-nav{
+    text-align: right;
+   
+}
 .navbar-nav { 
     margin-left: auto; 
 
+} 
+.navbar-brand img{
+    width: 180px;
 }
-.nav-link {
-    color: #7400b8;
+.nav-link{
+    color:#7400b8;
     font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    
+    margin-right:25px;
+    border-radius: 10px;
 }
 .nav-link:hover{
     background-color: #7400b8;
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s all ease;
 }
-
-  
-    /*hero-section*/
-    span{
-        color:#7400b8;
-       font-weight: 700;
-    }
-    .feature-img{
-        padding: 80px;
-        margin-right: 80px;
-  
-    }
-
-    .container{
-        margin:50px auto;
-        border-radius: 10px;
-        padding-top:50px;
-        padding-bottom: 50px;
-        box-shadow: 0 0 40px 2px rgba(0,0,0,0.4);
+span{
+    color: #7400b8;
+}
+.wrapper{
+    margin:50px auto;
+    border-radius: 10px;
+    padding-top:50px;
+    width: 100%;
+    padding-bottom: 50px;
+    box-shadow: 0 0 40px 2px rgba(0,0,0,0.2);
 }
 .feature-box{
     padding: 30px;
@@ -150,39 +131,42 @@ body.dark {
 }
 .feature-box h1{
     margin-top: 20%;
-    color: #14213d;
+    color: #111;
+    font-weight: bold;
 }
 .feature-box h5{
-    margin: 2px auto;
+    margin: 20px auto;
     color:#7400b8;
     font-weight: bold;
 }
 .feature-box a{
     text-decoration:none ;
-    background-color:#7400b8;
+    background-color: #7400b8;
     border-radius: 20px;
     padding: 10px 20px;
     margin-right: 20px;
-    border: 2px solid #14213d;
-    color: #14213d;
-    font-weight: 700;
+    border: 2px solid #7400b8;
    
+    margin-top: 20px;
 }
-.button{
-    margin-top: 30px;
+.bt{
+  display: flex;
+  flex-direction: row;
+margin-top: 20px;
+}
+.btn-one{
+  color: #fff;
 }
 .btn-one:hover{
-    color: #fff;
-    transition: 0.5s;
+    color: #111;
 }
 .btn-two{
     background:none !important;
-    color: #7400b8;
+ color: #7400b8;
     font-weight: 600;
 }
 .btn-two:hover{
-    color: #7400b8;
-    transition: 0.5s;
+  color: #111;
 }
 
 .feature-img{
@@ -228,7 +212,7 @@ body.dark {
 font-weight: 500;
 }
 .text{
-    color: white;
+    color: #fff;
     float: right;
 }
 .pro-value2{
@@ -323,6 +307,7 @@ font-weight: 500;
     border:none;
     outline: none;
     box-shadow: 0 0 40px 2px rgba(0,0,0,0.2);
+    width: 100%;
 
 
 }
@@ -336,8 +321,8 @@ font-weight: 500;
     font-weight: bold;
 }
 .circle{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     background-color:lightgray;
     color: #7400b8;
     padding: 12px;
@@ -358,7 +343,14 @@ font-weight: 500;
    transition: 0.5s;
 }
 /*portfolio*/
+.portfolio{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
+  width: 100%;
+  padding: 60px 30px;
+}
 .controls ul li{
 list-style: none;
 background-color: #7400b8;
@@ -370,6 +362,7 @@ cursor: pointer;
 }
 .item{
     position: relative;
+  
 
 }
 
@@ -391,10 +384,10 @@ opacity: 0;
     transition: 0.5s;
     
 }
-.text{
+.head{
     position: absolute;
     top:35%;
-    left: 40%;
+    left: 30%;
     font-size: 16px;
     justify-content: center;
     text-align: center;
@@ -405,7 +398,7 @@ cursor: pointer;
 opacity: 0;
 }
 
-.text:hover{
+.head:hover{
     opacity: 1;
     transition: 0.5s;
 }
@@ -419,15 +412,16 @@ opacity: 0;
 
 
 /*contact*/
-.wrapper {
+.wrapper2 {
     background: white;
-    height: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     margin:0 auto;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     border: 1px solid #fff;
+    box-shadow: 0 0 40px 2px rgba(0,0,0,0.4);
     border-radius: 15px;
     
   }
@@ -469,7 +463,7 @@ align-items: center;
   #submit {
     background:#7400b8;
     color: #fff;
-    width: 30%;
+    width: 20%;
     border: 1px solid #7400b8;
     border-radius: 5px;
    text-align: center;
@@ -477,9 +471,13 @@ align-items: center;
    margin:0 auto;
     display: flex;
     align-items: center;
+    top:2%;
+  bottom: 60%;
+  position: relative;
     justify-content: center;
-    height: 40px;
     margin-top: 20px;
+    height: 40px;
+    
   }
   #submit:hover{
       color:#7400b8;
@@ -494,17 +492,20 @@ align-items: center;
   .social{
     
       padding: 5px;
-      width: 5%;
-     
+      width:8%;
+  
+    position:relative;
     cursor: pointer;
       display: flex;
-      background-color:#7400b8;
+height: 30px;
       color: #fff;
-      flex-direction: column;
+      flex-direction: row;
      justify-content:space-evenly;
+     padding: 10px;
       align-items:center;
-      float: right;
-      border-radius: 50px;
+      top:2%;
+margin: 0 auto;
+  
   }
   .social a{
    font-size: 30px;
@@ -522,27 +523,217 @@ align-items: center;
     background-color: #7400b8;
     color:white;
 margin:0 auto;
- height: 55px;
+ height:65px;
     font-weight: bold;
     font-size: 18px;
+    width: 100%;
   
+  }
+  .para{
+    background-color: #7400b8;
+    margin-top: 2px;
+    height: 30px;
   }
 
   /*media queries*/
-  @media only screen and (max-width: 600px){
- 
-    .feature-img{
-       display: none;
-    }
-    
-  body{
-      overflow-x: hidden;
-  }
-  .label {
-    
-    display:none;
-  }
-.img{
-    display: none;
+ /* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+.feature-img{
+  display: none;
 }
+.feature-img2{
+  display: none;
+}
+.label{
+  display: none;
+}
+.container-fluid{
+width: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+footer{
+  width: 100%;
+
+}
+.social{
+max-width: 15%;
+justify-content:space-between;
+ display: flex;
+  
+}
+.bt{
+  display: flex;
+  flex-direction: column;
+margin-top: 20px;
+}
+.portfolio{
+  line-height: 30px;
+  padding: 80px 10px;
+}
+
+}
+/* Smartphones (landscape) ----------- *//*desktop-effect*/
+@media only screen
+and (min-width : 321px) {
+.container-fluid{
+  width: 100%;
+}
+footer{
+  width: 100%;
+}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  .feature-img{
+    display: none;
   }
+  .feature-img2{
+    display: none;
+  }
+  .label{
+    display: none;
+  }
+  .container-fluid{
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    width: 100%;
+  
+  }
+  
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  body{
+    overflow-x: hidden;}
+    .container-fluid{
+      max-width: 100%;
+    }
+    body{
+      overflow-x: hidden;
+    }
+    footer{
+      max-width: 100%;
+    
+    }
+
+  
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .container-fluid{
+    width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    width: 100%;
+  
+  }
+
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .container-fluid{
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    max-width: 100%;
+  
+  }
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  .container-fluid{
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    max-width: 100%;
+  
+  }
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .container-fluid{
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    width: 100%;
+  
+  }
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .container-fluid{
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    width: 100%;
+  
+  }
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  .container-fluid{
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  footer{
+    width: 100%;
+  
+  }
+}
