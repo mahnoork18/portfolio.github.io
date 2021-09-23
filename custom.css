@@ -5,8 +5,9 @@
     
     font-family: 'Poppins', sans-serif;
 }
-body {
-  overflow: hidden; /* Hide scrollbars */
+body,html {
+  overflow-x:hidden;
+ scroll-behavior: smooth;
 }
 
 
